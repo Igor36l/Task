@@ -42,7 +42,8 @@ public class User {
     private LocalDateTime updateDate;
 
 
-    public User() {}
+    public User() {
+    }
 
     public User(String login, String password, String fullName, UserRole role, String email, Department department,
                 LocalDateTime birthDay, boolean active, LocalDateTime updateDate) {

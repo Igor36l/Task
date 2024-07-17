@@ -1,12 +1,12 @@
-package com.naumen.task.Service;
+package com.naumen.task.service;
 
-import com.naumen.task.Dto.UserDto;
+import com.naumen.task.dto.UserDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
 @Service
-public class ExternalUserServiceImpl implements ExternalUserService{
+public class ExternalUserServiceImpl implements ExternalUserService {
 
     private final RestClient restClient;
 

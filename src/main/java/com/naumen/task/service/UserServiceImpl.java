@@ -1,8 +1,8 @@
-package com.naumen.task.Service;
+package com.naumen.task.service;
 
-import com.naumen.task.Dto.UserDto;
-import com.naumen.task.Repository.UserRepository;
+import com.naumen.task.dto.UserDto;
 import com.naumen.task.entity.User;
+import com.naumen.task.repository.UserRepository;
 import org.springframework.retry.annotation.Backoff;
 import org.springframework.retry.annotation.Retryable;
 import org.springframework.stereotype.Service;

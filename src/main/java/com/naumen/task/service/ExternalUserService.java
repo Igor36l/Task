@@ -1,6 +1,6 @@
-package com.naumen.task.Service;
+package com.naumen.task.service;
 
-import com.naumen.task.Dto.UserDto;
+import com.naumen.task.dto.UserDto;
 
 public interface ExternalUserService {
     UserDto getUserByLogin(String login);

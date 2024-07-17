@@ -1,4 +1,4 @@
-package com.naumen.task.Service;
+package com.naumen.task.service;
 
 import com.naumen.task.entity.User;
 

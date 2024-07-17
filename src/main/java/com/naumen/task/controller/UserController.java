@@ -1,7 +1,7 @@
 package com.naumen.task.controller;
 
-import com.naumen.task.Service.UserService;
 import com.naumen.task.entity.User;
+import com.naumen.task.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,7 +29,6 @@ public class UserController {
     public ResponseEntity<List<User>> updateUsers(@RequestParam Long departmentId, HttpServletRequest request) {
         User admin = (User) request.getUserPrincipal();
 
-        // Проверяем, что пользователь имеет роль ADMIN
         if (!admin.getRole().getName().equals("ADMIN")) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         }

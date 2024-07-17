@@ -17,7 +17,8 @@ public class Department {
     @Column(name = "active")
     private boolean isActive;
 
-    public Department() {}
+    public Department() {
+    }
 
     public Department(String name, boolean isActive) {
         this.name = name;

@@ -1,4 +1,4 @@
-package com.naumen.task.Dto;
+package com.naumen.task.dto;
 
 import java.time.LocalDate;
 
